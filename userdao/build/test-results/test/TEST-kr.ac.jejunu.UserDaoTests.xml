@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="kr.ac.jejunu.UserDaoTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-11T09:04:52" hostname="MacBook-Pro-3.local" time="0.892">
+<testsuite name="kr.ac.jejunu.UserDaoTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-04-16T08:16:28" hostname="MacBook-Pro-3.local" time="1.426">
   <properties/>
-  <testcase name="delete()" classname="kr.ac.jejunu.UserDaoTests" time="0.653"/>
-  <testcase name="insert()" classname="kr.ac.jejunu.UserDaoTests" time="0.084"/>
-  <testcase name="update()" classname="kr.ac.jejunu.UserDaoTests" time="0.112"/>
-  <testcase name="get()" classname="kr.ac.jejunu.UserDaoTests" time="0.04"/>
+  <testcase name="delete()" classname="kr.ac.jejunu.UserDaoTests" time="0.993"/>
+  <testcase name="insert()" classname="kr.ac.jejunu.UserDaoTests" time="0.195"/>
+  <testcase name="update()" classname="kr.ac.jejunu.UserDaoTests" time="0.186"/>
+  <testcase name="get()" classname="kr.ac.jejunu.UserDaoTests" time="0.043"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

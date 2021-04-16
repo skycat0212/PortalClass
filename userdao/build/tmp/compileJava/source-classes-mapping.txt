@@ -14,11 +14,5 @@ kr/ac/jejunu/JdbcContext.java
  kr.ac.jejunu.JdbcContext
 kr/ac/jejunu/UserDao.java
  kr.ac.jejunu.UserDao
-kr/ac/jejunu/InsertStatementStrategy.java
- kr.ac.jejunu.InsertStatementStrategy
-kr/ac/jejunu/UpdateStatementStrategy.java
- kr.ac.jejunu.UpdateStatementStrategy
-kr/ac/jejunu/DeleteStatementStrategy.java
- kr.ac.jejunu.DeleteStatementStrategy
 kr/ac/jejunu/DaoFactory.java
  kr.ac.jejunu.DaoFactory
