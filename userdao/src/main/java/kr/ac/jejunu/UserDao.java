@@ -27,7 +27,7 @@ public class UserDao {
 
     public final JdbcTemplate jdbcTemplate;
 
-    public User findById(Integer id) throws SQLException {
+    public User findById(Integer id) {
         //데이터 어딨어? =? mysql
         String sql = "select * from  userinfo where id = ?";
         Object[] params = new Object[]{id};
@@ -43,7 +43,7 @@ public class UserDao {
         }, id);
     }
 
-    public void insert(User user) throws SQLException {
+    public void insert(User user) {
         //데이터 어딨어? =? mysql
         String sql = "insert into userinfo (name, password) values ( ?, ? )";
         Object[] params = new Object[]{user.getName(), user.getPassword()};
@@ -61,14 +61,14 @@ public class UserDao {
         user.setId(keyHolder.getKey().intValue());
     }
 
-    public void update(User user) throws SQLException {
+    public void update(User user) {
         //데이터 어딨어? =? mysql
         String sql = "update userinfo set name = ?, password = ? where id = ?";
         Object[] params = new Object[]{user.getName(), user.getPassword(), user.getId()};
         jdbcTemplate.update(sql, params);
     }
 
-    public void delete(Integer id) throws SQLException {
+    public void delete(Integer id) {
         //데이터 어딨어? =? mysql
         String sql = "delete from userinfo where id = ?";
         Object[] params = new Object[]{id};
