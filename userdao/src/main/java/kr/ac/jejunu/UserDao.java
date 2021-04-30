@@ -1,5 +1,6 @@
 package kr.ac.jejunu;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -12,6 +13,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @Component
+@RequiredArgsConstructor
 public class UserDao {
 
 //    private final JdbcTemplate jdbcTemplate;
@@ -20,8 +22,10 @@ public class UserDao {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
 
-    @Autowired
-    private JdbcTemplate jdbcTemplate;
+//    @Autowired
+//    private JdbcTemplate jdbcTemplate;
+
+    public final JdbcTemplate jdbcTemplate;
 
     public User findById(Integer id) throws SQLException {
         //데이터 어딨어? =? mysql

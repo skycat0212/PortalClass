@@ -50,12 +50,10 @@ public class UserDaoTests {
 
     @Test
     public void insert() throws SQLException, ClassNotFoundException {
-        User user = new User();
         String name = "허윤호";
         String password = "1111";
 
-        user.setName(name);
-        user.setPassword(password);
+        User user = User.builder().name(name).password(password).build();
 //        DaoFactory daoFactory = new DaoFactory();
 //        UserDao userDao = daoFactory.getUserDao(); //new UserDao(new JejuConnectionMaker());
         userDao.insert(user);
@@ -79,6 +77,10 @@ public class UserDaoTests {
         user.setName(name);
         user.setPassword(password);
         userDao.insert(user);
+
+        System.out.println("*****************");
+        System.out.println(user);
+        System.out.println("*****************");
 
         user.setName("hulk");
         user.setPassword("1234");

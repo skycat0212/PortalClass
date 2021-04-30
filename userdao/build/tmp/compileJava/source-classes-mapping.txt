@@ -10,6 +10,7 @@ kr/ac/jejunu/DataSource.java
  kr.ac.jejunu.DataSource
 kr/ac/jejunu/User.java
  kr.ac.jejunu.User
+ kr.ac.jejunu.User$UserBuilder
 kr/ac/jejunu/JdbcContext.java
  kr.ac.jejunu.JdbcContext
 kr/ac/jejunu/UserDao.java
