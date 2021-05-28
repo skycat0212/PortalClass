@@ -42,4 +42,8 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
 
     implementation 'javax.servlet:javax.servlet-api:4.0.1'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.3'
+
 }
